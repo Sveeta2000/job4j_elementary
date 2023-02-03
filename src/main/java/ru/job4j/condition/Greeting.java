@@ -5,7 +5,6 @@ package ru.job4j.condition;
  * @date 03.02.2023
  */
 public class Greeting {
-
     public static void main(String[] args) {
         String idea = "I like Java!";
         System.out.println(idea);
