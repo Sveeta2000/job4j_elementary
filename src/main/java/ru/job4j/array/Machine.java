@@ -13,10 +13,10 @@ public class Machine {
         int[] result = new int[100];
         int size = 0;
         int changeLeft = money - price;
-        for (int i = 0; i < coins.length; i++) {
-            while (changeLeft >= coins[i]) {
-                changeLeft -= coins[i];
-                result[size] = coins[i];
+        for (int coin : coins) {
+            while (changeLeft >= coin) {
+                changeLeft -= coin;
+                result[size] = coin;
                 size++;
             }
         }
